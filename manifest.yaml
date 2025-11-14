@@ -1,12 +1,12 @@
 manifestVersion: 1
 
 info:
-  name: CLC Create and register entities
-  version: 0.1.2
+  name: Aina app test
+  version: 0.1.3
   
 features:
-  - name: CLC Create and register entities
-    id: CLC_create_and_register_entities
+  - name: Aina app test
+    id: Aina_app_test
     type: CANVAS
     
 subscriptions:
@@ -67,13 +67,13 @@ configuration:
     requiredConfig: true
   - name: gRNA schema
     type: entity_schema
-    subtype: dna_sequence
+    #subtype: dna_sequence
     description: Schema for crRNA (called gRNA)
     # value: ts_U5cFoGIs
     requiredConfig: true
   - name: Primer schema
     type: entity_schema
-    subtype: dna_sequence
+   # subtype: dna_sequence
     description: Schema for receiver and screening primers (called primer)
     # value: ts_D4f7w1Fe
     requiredConfig: true
@@ -116,7 +116,7 @@ configuration:
     # value: pltsch_uMXQPcW3
     requiredConfig: true
 
-  - name: Registry schema
+  - name: Registry schema   # This schema and the project one need to be always here
     type: registry
     description: Schema of the registry
     # value: src_1MhfzKi0
